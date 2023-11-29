@@ -1,5 +1,5 @@
 html{
-    background-color:rgb(255, 140, 220);
+    background-color:#F2C6DE;
 }
 .header{
     margin-top:0px;
@@ -8,30 +8,58 @@ html{
     padding-top:15px;
     align-self: center;
     opacity:0.55;
-    background-color:rgb(255, 228, 50);
+    background-color:#FAEDCB;
     
     /* background-blend-mode:screen; */
 }
 .heading{
     text-align:center;
-    color:#6b0acb;
+    color:black;
     font-size:30px;
     font-family: 'Comfortaa', sans-serif;
 }
 /*******************************************************************************************************/
 .container1{
-    margin-top:10px;
-    color:#6b0acb;
-    font-size:30px;
+    color:black;
+    font-size:28px;
     font-family: 'Comfortaa', sans-serif;
     opacity:0.55;
     width:1265px;
     height:70px;
-    background-color:rgb(241, 150, 194);
+    background-color:#DBCDF0;
     display:flex;
     justify-content:space-around;
     flex-wrap:wrap;
     align-items:center;
     align-content:center;
+
+}
+a:link {
+    color:black;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+a:visited {
+    color: rgb(63, 63, 3);
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+a:hover {
+    color: black;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+
+.cont{
+    display:grid;
+    height:50vh;
+    background-color:rgb(152, 216, 255);
+    grid-template-rows:1fr;
+    grid-template-columns:1fr 1fr 1fr;
+}
+.a,.b,.c,.d{
+    background-color:blanchedalmond;
 
 }
