@@ -1,0 +1,20 @@
+@keyframes change{
+    50%{
+        background-image: radial-gradient(circle, lightblue, rgb(106, 188, 255), rgb(150, 239, 245));
+    }
+    100%{
+        background-image: radial-gradient(circle, lightblue, rgb(106, 188, 255), rgb(33, 228, 127));
+    }
+}
+
+
+body{
+    background-image: radial-gradient(circle, lightblue, rgb(106, 188, 255), rgb(33, 228, 185));
+    font-family: 'Rubik Doodle Shadow', sans-serif;
+    color:rgb(3, 84, 83);
+    font-size:40px;
+    text-align: center;
+    animation-name: change;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}

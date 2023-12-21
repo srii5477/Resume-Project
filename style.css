@@ -1,70 +1,103 @@
+
+/* Typography & UI Design */
+
 html{
-    background-color:rgb(35, 33, 33);
+    background-color:#FFF8C9;
 }
-h1{
-    font-family:'Arvo',cursive;
-    color:goldenrod;
+@keyframes shine{
+    0%{
+        background-position: -200%;
+    }
+    100%{
+        background-position: 200%;
+    }
+}
+
+h2{
+    background: linear-gradient(90deg,#d2c2ff, rgb(102, 43, 198), #d2c2ff);
+    background-repeat: no-repeat;
+    background-size: 80%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: rgba(255,255,255,0);
+    animation: shine 3s linear 5;
+}
+.header{
+    margin-top:0px;
+    height:130px;
+    width:1265px;
+    padding-top:10px;
+    align-self: center;
+    background-color:#d2c2ff;
+    /* background-blend-mode:screen; */
+}
+.heading, h2{
     text-align:center;
-    margin-top:5%;
-    font-size:70px;
-    text-shadow: 3px 0 rgb(255, 231, 97);
+    color:rgb(102, 43, 198);
+    /* text-shadow: -1px 1px 0 #f4f9f9, 
+                  1px 1px 0 #f4f9f9, 
+                  1px -1px 0 #f4f9f9, 
+                 -1px -1px 0 #f4f9f9;  */
+    font-size:50px;
+    font-family: 'Comfortaa', sans-serif;
 }
-.keyboard{
-    margin-top:10%;
+/*******************************************************************************************************/
+.container1{
+    border-top:5px solid #7f5dfa;
+    border-bottom:5px solid #7f5dfa;
+    color:#7f5dfa;
+    font-size:28px;
+    font-family: 'Comfortaa', sans-serif;
+    width:1265px;
+    height:70px;
+    display:flex;
+    justify-content:space-around;
+    flex-wrap:wrap;
+    align-items:center;
+    align-content:center;
+
+}
+a:link {
+    color:#7f5dfa;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+a:visited {
+    color: #6138f6;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+a:hover {
+    color: #6138f6;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+
+.cont{
+    margin-top:15px;
     display:grid;
-    height:45vh;
-    width:90%;
-    margin-left:5%;
-    background-color:rgb(234, 217, 175);
-    grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    height:50vh;
+    gap:10px;
+    grid-template-rows:1fr;
+    grid-template-columns:1fr 1fr 1fr;
 }
-.c,.d,.e,.f,.g,.a,.b{
-    background-color:rgb(243, 226, 131);
-    border:2px solid black;
-    color:rgb(243, 226, 131);
-    box-shadow: 0 8px 8px -4px rgb(235, 244, 155);
+.a,.b,.c,.d{
+    /* background-color:rgb(205, 238, 250); */
+    background-color:#E6FFFD;
+    border:5px inset rgb(112, 121, 243);
 }
-.b1,.b2,.b3,.b4,.b5{
-  color:black;
-  box-shadow: 0 8px 8px -4px rgb(235, 244, 155);
+p,.p1,.p2{
+    margin-left: 2%;
+    font-family:'Architects Daughter', cursive;
+    display:none;
+    font-size:17px;
+    color:rgb(77, 19, 201);
 }
-.blackkeys {
-    position: relative;
-    top: -45vh; 
-    display: grid;
-    height: 30vh; 
-    width: 90%;
-    margin-left: 5%;
-    grid-template-columns: 4fr 1fr 1fr 3fr 1fr 1fr 4fr 4fr 1fr 1fr 3fr 1fr 1fr 3fr 1fr 1fr 4fr; 
-  }
-  
-  .b1, .b2, .b3, .b4, .b5 {
-    background-color: rgb(0, 0, 0);
-    border: 2px solid black;
-  }
-  
-  .b1 {
-    grid-column-start: 2;
-    grid-column-end: 4;
-  }
-  
-  .b2 {
-    grid-column-start: 5;
-    grid-column-end: 7;
-  }
-  
-  .b3 {
-    grid-column-start: 9;
-    grid-column-end: 11;
-  }
-  
-  .b4 {
-    grid-column-start: 12;
-    grid-column-end: 14;
-  }
-  
-  .b5 {
-    grid-column-start: 15;
-    grid-column-end: 17;
-  }
-  
+.mondrianart{
+    margin-left: 12%;
+    margin-top: 2%;
+}
+
+
